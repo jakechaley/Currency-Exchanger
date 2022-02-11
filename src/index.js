@@ -9,15 +9,13 @@ $(document).ready(function() {
     event.preventDefault();
     const currencyCode = $("#currencyChoice").val();
     const dollarInput = $("#dollarAmount").val();
-    console.log(currencyCode);
-    console.log(dollarInput);
-    $("currencyChoice").val("");
-    $("dollarAmount").val("");
+    $("#currencyChoice").val("");
+    $("#dollarAmount").val("");
     let promise = Currency.getRate(currencyCode, dollarInput);
     promise.then(function (response) {
       const body = JSON.parse(response);
       $(".exchangeResults").text('');
-      $(".exchangeResult").append(`The amount you entered is equal to ${body.conversion_result} ${currencyCode}`);
+      $(".exchangeResults").text(`The amount you entered is equal to ${body.conversion_result.toFixed(2)} ${currencyCode.toUpperCase()}`);
     })
       .catch(function(error) {
         $(".showErrors").text(`There was an error processing your request: ${error}`);
