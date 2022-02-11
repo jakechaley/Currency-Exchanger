@@ -10,9 +10,29 @@ body {
 
 .card-contents {
   width: 25em;
-  height: 30em;
+  height: 25em;
   text-align: center;
   border-radius: 1em;
   margin-left: 23em;
+  margin-top: 6em;
+}
 
+.button-styling {
+  margin-top: 1em;
+}
+
+.dollarDiv {
+  margin-top: 1em;
+}
+
+.currencyDiv {
+  margin-top: 1em;
+}
+
+.exchangeResults {
+  margin-top: 1em;
+}
+
+.showErrors {
+  margin-top: 1em;
 }
