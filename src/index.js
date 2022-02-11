@@ -11,10 +11,11 @@ $(document).ready(function() {
     const dollarInput = $("#dollarAmount").val();
     $("#currencyChoice").val("");
     $("#dollarAmount").val("");
+    $(".showErrors").text("")
+    $(".exchangeResults").text('');
     let promise = Currency.getRate(currencyCode, dollarInput);
     promise.then(function (response) {
       const body = JSON.parse(response);
-      $(".exchangeResults").text('');
       $(".exchangeResults").text(`The amount you entered is equal to ${body.conversion_result.toFixed(2)} ${currencyCode.toUpperCase()}`);
     })
       .catch(function(error) {
