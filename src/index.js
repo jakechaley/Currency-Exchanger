@@ -11,7 +11,7 @@ $(document).ready(function() {
     const dollarInput = $("#dollarAmount").val();
     $("#currencyChoice").val("");
     $("#dollarAmount").val("");
-    $(".showErrors").text("")
+    $(".showErrors").text("");
     $(".exchangeResults").text('');
     let promise = Currency.getRate(currencyCode, dollarInput);
     promise.then(function (response) {

@@ -5,14 +5,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>Currency Exchanger</h1>
-    <form id="userInput">
-      <label for="dollarAmount">US Dollars</label>
-      <input id="dollarAmount" type="number" placeholder="$6.50" step="0.01" min="0" max="10000000000000">
-      <label for="currencyChoice">Enter a 3 digit currency code (EX: CAD, MXN, AUD etc.):</label>
-      <input type="text" id="currencyChoice">
-      <button class="btn btn-warning">Submits</button>
-    </form>
+    <h1 class="jumbotron header">Currency Exchanger</h1>
+    <div class="card">
+      <form id="userInput">
+        <label for="dollarAmount">US Dollars $</label>
+        <input id="dollarAmount" type="number" placeholder="0.00" step="0.01" min="0" max="10000000000000">
+        <label for="currencyChoice">Enter a 3 digit currency code (EX: CAD, MXN, AUD etc.):</label>
+        <input type="text" id="currencyChoice">
+        <button class="btn btn-warning">Submits</button>
+      </form>
+    </div>
     <div class="showErrors"></div>
     <div class="exchangeResults"></div>
 

@@ -1,3 +1,8 @@
 body {
   background-color: cornflowerblue;
 }
+
+.header {
+  background-color: rgb(245, 53, 92);
+  border-radius: 1em;
+}
