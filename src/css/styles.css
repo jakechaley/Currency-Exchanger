@@ -9,6 +9,7 @@ body {
   font-family: 'Supermercado One', cursive;
   font-size: 82px;
   border-style: solid;
+  box-shadow: 10px 10px 10px darkblue;
 }
 
 .card-contents {
@@ -21,6 +22,7 @@ body {
   font-family: 'Supermercado One', cursive;
   font-size: larger;
   background-color: rgb(172, 255, 89);
+  box-shadow: 10px 10px 10px darkblue;
   
 }
 
