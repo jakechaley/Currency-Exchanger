@@ -24,8 +24,12 @@
 
 * Clone the repository
 * Run `$ npm install` in root directory
-* Run `$ npm run start` in terminal to create live server
 * Get API key by going to https://www.exchangerate-api.com/. Enter email then click "Get Free Key!"
+* Create a `.env` file in the root directory that looks like this:
+  ```
+  API_KEY=<your API key here>
+  ```
+* Run `$ npm run start` in terminal to create live server
 
 ## Known Bugs
 
