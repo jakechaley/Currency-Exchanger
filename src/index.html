@@ -9,17 +9,17 @@
 <body>
   <div class="container">
     <h1 class="jumbotron header">Currency Exchanger</h1>
-    <div class="card card-contents">
+    <div class="card-contents">
       <form id="userInput">
         <div class="dollarDiv">
           <label for="dollarAmount">US Dollars $</label>
-          <input id="dollarAmount" type="number" placeholder="0.00" step="0.01" min="0" max="10000000000000">
+          <input id="dollarAmount" type="number" placeholder="0.00" step="0.01" min="0" max="10000000000000" required="true">
         </div>
         <div class="currencyDiv">
           <label for="currencyChoice">3 digit currency code (EX: CAD)</label>
-          <input type="text" id="currencyChoice">
+          <input type="text" id="currencyChoice" required="true">
         </div>
-        <button class="btn button-styling">Submit</button>
+        <button class="button-styling">Submit</button>
       </form>
       <div class="showErrors"></div>
       <div class="exchangeResults"></div>

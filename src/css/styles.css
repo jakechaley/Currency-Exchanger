@@ -8,8 +8,9 @@ body {
   text-align: center;
   font-family: 'Supermercado One', cursive;
   font-size: 82px;
-  border-style: solid;
+  border: 3px solid black;
   box-shadow: 10px 10px 10px darkblue;
+  margin-top: .5em;
 }
 
 .card-contents {
@@ -23,12 +24,15 @@ body {
   font-size: larger;
   background-color: rgb(172, 255, 89);
   box-shadow: 10px 10px 10px darkblue;
+  border: 3px solid black;
   
 }
 
 .button-styling {
   margin-top: 1em;
   background-color: rgb(255, 238, 0);
+  border-radius: 0.3em;
+  border: 2px solid black;
 }
 
 .dollarDiv {
