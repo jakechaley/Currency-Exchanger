@@ -6,19 +6,27 @@ body {
   background-color: rgb(245, 53, 92);
   border-radius: 1em;
   text-align: center;
+  font-family: 'Supermercado One', cursive;
+  font-size: 82px;
+  border-style: solid;
 }
 
 .card-contents {
-  width: 25em;
+  width: 30em;
   height: 25em;
   text-align: center;
   border-radius: 1em;
-  margin-left: 23em;
-  margin-top: 6em;
+  margin-left: 15em;
+  margin-top: 3em;
+  font-family: 'Supermercado One', cursive;
+  font-size: larger;
+  background-color: rgb(172, 255, 89);
+  
 }
 
 .button-styling {
   margin-top: 1em;
+  background-color: rgb(255, 238, 0);
 }
 
 .dollarDiv {
