@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+  <title>Currency Exchange</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron header">Currency Exchanger</h1>
+    <div class="card-contents">
+      <form id="userInput">
+        <div class="dollarDiv">
+          <label for="dollarAmount">US Dollars $</label>
+          <input id="dollarAmount" type="number" placeholder="0.00" step="0.01" min="0" max="10000000000000" required="true">
+        </div>
+        <div class="currencyDiv">
+          <label for="currencyChoice">3 digit currency code (EX: CAD)</label>
+          <input type="text" id="currencyChoice" required="true">
+        </div>
+        <button class="button-styling">Submit</button>
+      </form>
+      <div class="showErrors"></div>
+      <div class="exchangeResults"></div>
+    </div>
+
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
